@@ -3,8 +3,13 @@
 
 <main>
   <div class="container">
-    <div class="row">
-      <div class="col s6">
+    <div clsas = "row center">
+      <div class = col s12>
+        <img class = "burger-img" src= "https://icon-library.net/images/hamburger-icon-png/hamburger-icon-png-7.jpg">
+      </div>
+    </div>
+    <div class="row center">
+      <div class="col s12">
         {{#each burgers}}
           {{#unless this.devoured}}
             <div>
@@ -16,7 +21,7 @@
         {{/each}}
       </div>
 
-      <div class="col s6">
+      <div class="col s12">
         {{#each burgers}}
           {{#if this.devoured}}
             <div class='burgerEaten'>

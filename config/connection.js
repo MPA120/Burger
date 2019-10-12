@@ -5,15 +5,15 @@ var mysql = require('mysql');
 var connection;
 
 if (process.env.JAWSDB_URL) {
-	// DB is JawsDB on Heroku
+	// Database is JawsDB on Heroku
 	connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
 	// DB is local on localhost
 	connection = mysql.createConnection({
 		port: 3306,
 		host: 'localhost',
-		user: 'root',
-		password: '1234',
+		user: 'rcgflwgcq0jjgb7j4',
+		password: 'sntdic1qrjq2ku3c',
 		database: 'burger_db'
 	})
 };
